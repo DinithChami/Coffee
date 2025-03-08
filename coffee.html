@@ -8,6 +8,9 @@
     <!--Linking font awesome for icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!--Linking swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <!-- header / navbar-->
@@ -69,19 +72,132 @@
 
         <!--About section-->
         <section class="about-section">
-            <div class="about-image-section">
-                <img src="about.jpg" alt="About" class="about-image">
-            </div>
-            <div class="about-details">
-                <h2 class="section title">About Us</h2>
-                <p class="text"> At Coffee House in Berndorf, Germany, We pride ourselves on being a go-to destination for coffee 
-                    lovers and converstion seeker alink. We're dedicated to providing an exceptional coffee experience in a cozy 
-                    and inviting atmosphere, where guests can relax, unwind and enjoy their time in comfort.
-                </p>
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="about.jpg" alt="About" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text"> At Coffee House in Berndorf, Germany, We pride ourselves on being a go-to destination for coffee 
+                        lovers and converstion seeker alink. We're dedicated to providing an exceptional coffee experience in a cozy 
+                        and inviting atmosphere, where guests can relax, unwind and enjoy their time in comfort.
+                    </p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!--Menu section-->
+        <section class="menu-section">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="hot-beverages.png" alt="Hot Beverages" class="menu-image">
+                        <div class="menu-details.">
+                            <h3 class="name">Hot Beverages</h3>
+                            <p class="text"> Wide range of Steaming hot coffee to make you 
+                                fresh and light.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="cold-beverages.png" alt="Cold Beverages" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Cold Beverages</h3>
+                            <p class="text"> Creamy and frothy cold coffee to make you cool.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="refreshment.png" alt="Refreshment" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Refreshment</h3>
+                            <p class="text"> Fruit and icy refreshing drink to make feel refresh.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="special-combo.png" alt="Special-Combo" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Special Combo</h3>
+                            <p class="text">Your favorite eatiing and drinking combations.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="desserts.png" alt="desserts" class="menu-image">
+                        <div class="menu-details.">
+                            <h3 class="name">Desserts</h3>
+                            <p class="text"> Satiate your palate and take you on a culinary 
+                                treat.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="burger-frenchfries.png" alt="burger-frenchfries" class="menu-image">
+                        <div class="menu-details.">
+                            <h3 class="name">Burger & French Fries</h3>
+                            <p class="text"> Quick bites to satisfy your small size hunger.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
-    </main>    
 
+        <!--Testimonials section-->
+        <section class="testimonials-section">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-content">
+                <div class="slider-container slider">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-wrapper">
+                                <img src="user-1.jpg" alt="user" class="user-image">
+                                <h3 class="name">Sarah johnson</h3>
+                                <i class="feedback">"Loved the French roast. perfectly balanced and rich.
+                                    Will order again!"</i>
+                            </li>
+                            <li class="testimonial swiper-wrapper">
+                                <img src="user-2.jpg" alt="user" class="user-image">
+                                <h3 class="name">James Wilson</h3>
+                                <i class="feedback">"Great espresso blend! smooth and bold flavor.
+                                    Fast shipping too!"</i>
+                            </li>
+                            <li class="testimonial swiper-wrapper">
+                                <img src="user-3.jpg" alt="user" class="user-image">
+                                <h3 class="name">Michael Brown</h3>
+                                <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick 
+                                    shipping!"</i>
+                            </li>
+                            <li class="testimonial swiper-wrapper">
+                                <img src="user-4.jpg" alt="user" class="user-image">
+                                <h3 class="name">Emily Harris</h3>
+                                <i class="feedback">"Excellent quality! Fresh beans and quick delivery.
+                                    Highly recommend."</i>
+                            </li>
+                            <li class="testimonial swiper-wrapper">
+                                <img src="user-5.jpg" alt="user" class="user-image">
+                                <h3 class="name">Anthony Thompson</h3>
+                                <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived
+                                    promptly."</i>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-slide-button swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>   
+    
+    <!--Linking swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!--Linking custom script-->
     <script src="script.js"></script>
 </body> 
 </html>
