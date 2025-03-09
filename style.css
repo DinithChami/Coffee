@@ -42,6 +42,10 @@
     --site-max-width: 1300px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*stylings for whole site*/
 ul{
     list-style:none ;
@@ -300,6 +304,7 @@ header .navbar {
 }
 
 .testimonials-section .testimonial{
+    user-select: none;
     display: flex;
     padding: 35px;
     text-align: center;
@@ -438,6 +443,39 @@ header .navbar {
     color: var(--primary-color);
 }
 
+/* footer section styling*/
+.footer-section {
+    padding: 20px 0;
+    background: var(--dark-color);
+}
+
+.footer-section .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-section :where(.copyright-text, .social-link, .policy-link){
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    transition: 0.2s ease;
+}
+
+.footer-section .social-link-list{
+    display:flex;
+    gap: 25px;
+}
+
+.footer-section .social-link-list .social-link:hover, 
+.footer-section .policy-text .policy-link:hover {
+    color: var(--secondary-color);
+}
+
+.footer-section .policy-text .separator {
+    margin: 0 5px;
+    color: var(--white-color);
+}
+
 /*Responsive media query code for max width 1024px*/
 @media  screen and (max-width: 1024px) {
     .menu-section .menu-list{
@@ -522,7 +560,8 @@ header .navbar {
         width :100%;
     }
 
-    .hero-section .hero-details :is( .subtitle, .description) .about-section .about-details{
+    .hero-section .hero-details :is( .subtitle, .description) .about-section .about-details, 
+    .contact-section .contact-form {
         max-width: 100%;
     }
 
@@ -536,7 +575,7 @@ header .navbar {
     }
 
     .about-section .section-content{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 70px;
     }
 
@@ -566,6 +605,11 @@ header .navbar {
     .gallery-section .gallery-list .gallery-item {
         width:calc(100% / 2 - 30px) ;
     }
+
+    .contact-section .section-content {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
 }
 
 /*Responsive media query code for max width 640px*/
@@ -585,5 +629,10 @@ header .navbar {
 
     .testimonials-section .swiper-slide-button{
         display: none;
+    }
+
+    .footer-section .section-content{
+        flex-direction: column;
+        gap: 20px;
     }
 }
