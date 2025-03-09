@@ -15,6 +15,9 @@ const swiper = new Swiper('.slider-wrapper', {
     loop: true,
     grabCursor: true,
     spaceBetween: 25,
+    autoplay: {
+      delay: 1000,
+    },
   
     // If we need pagination
     pagination: {
